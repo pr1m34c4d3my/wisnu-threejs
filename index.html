@@ -8,11 +8,32 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, target-densityDpi=device-dpi, minimal-ui"
     />
     <title>Wisnu Three.JS</title>
+    
+   
   </head>
   <body class="light-theme">
     <div class="experience">
       <canvas class="experience-canvas"></canvas>
     </div>
+
+    <audio id="backgroundAudio"  loop volume="0.3">
+      <source src="/audio/audio.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const audio = document.getElementById("backgroundAudio");
+        const playAudio = () => {
+          audio.play().catch(error => {
+            console.error("Autoplay prevented:", error);
+          });
+          window.removeEventListener('scroll', playAudio);
+        };
+
+        window.addEventListener('scroll', playAudio);
+      });
+    </script>
 
     <!-- Preloader -->
     <div class="preloader">
@@ -217,6 +238,9 @@
         </section>
       </div>
     </div>
+   
+    
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
