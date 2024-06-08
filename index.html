@@ -16,7 +16,7 @@
       <canvas class="experience-canvas"></canvas>
     </div>
 
-    <audio id="backgroundAudio"  loop volume="0.3">
+    <audio id="backgroundAudio" loop volume="0.1">
       <source src="/audio/audio.mp3" type="audio/mp3">
       Your browser does not support the audio element.
     </audio>
@@ -33,6 +33,9 @@
 
         window.addEventListener('scroll', playAudio);
       });
+
+      let audioVolume = document.getElementById("backgroundAudio")
+      audioVolume.volume = 0.08
     </script>
 
     <!-- Preloader -->
@@ -128,7 +131,7 @@
             </p>
             <p class="section-text">
               I have work with many clients around the world, what tech-stack that i often to used is
-              <ul>
+              <ul class="section-text">
                 <li>JavaScript</li>
                 <li>TypeScript</li>
                 <li>HTML</li>
@@ -177,10 +180,10 @@
           <div class="section-detail-wrapper">
             <h3 class="section-heading">Mitra Integrasi Informatika</h3>
             <p class="section-text">
-              Working at MII has been nothing short of a wonderful adventure. It's a place where I’ve truly felt at home, surrounded by an incredible team that genuinely cares and supports one another.<br />
+              Working at MII has been nothing short of a wonderful adventure. It's a place where I’ve truly felt at home, surrounded by an incredible team that genuinely cares and supports one another.<br /><br />
               The atmosphere here is just amazing, full of warmth and positivity, making every day a joy to come to work.
 
-              I've mostly been diving deep into WebMethod IS and Java, and it’s been such a rewarding journey. There’s something special about seeing a project come to life, knowing that your code is playing a key role in making it happen. <br /> It’s not just about the work itself, but also about the camaraderie and the sense of achievement we all share when we solve a tricky problem or hit a major milestone.
+              I've mostly been diving deep into WebMethod IS and Java, and it’s been such a rewarding journey. There’s something special about seeing a project come to life, knowing that your code is playing a key role in making it happen. <br /> <br />It’s not just about the work itself, but also about the camaraderie and the sense of achievement we all share when we solve a tricky problem or hit a major milestone.
               
               MII is more than just a workplace for me, it’s a community of passionate and talented people who bring out the best in each other. I feel incredibly lucky to be part of this team, and I can’t wait to see what more we can achieve together.
             </p>
